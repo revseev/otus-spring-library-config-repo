@@ -48,7 +48,7 @@ logging:
 #    root: WARN
     ru: DEBUG
     org.springframework.security: DEBUG
-
+    com.netflix.hystrix: DEBUG
 ---
 spring:
   config:
