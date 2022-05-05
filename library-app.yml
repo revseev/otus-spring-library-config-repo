@@ -1,11 +1,8 @@
 spring:
-  profiles:
-    default: dev
   data:
     mongodb:
       database: library_app
       port: 5050
-  #      host: 0.0.0.0
 
   output:
     ansi:
@@ -45,10 +42,8 @@ management:
       enabled: true
 logging:
   level:
-#    root: WARN
-    ru: DEBUG
-    org.springframework.security: DEBUG
-    com.netflix.hystrix: DEBUG
+    root: INFO
+
 ---
 spring:
   config:
@@ -58,4 +53,8 @@ spring:
 logging:
   level:
     ru: DEBUG
-    org.springframework.security: DEBUG
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
