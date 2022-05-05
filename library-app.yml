@@ -1,6 +1,6 @@
 spring:
   profiles:
-    default: dev #default
+    default: dev
   data:
     mongodb:
       database: library_app
@@ -42,7 +42,9 @@ management:
       enabled: true
 logging:
   level:
-    root: WARN
+#    root: WARN
+    ru: DEBUG
+    org.springframework.security: DEBUG
 
 ---
 spring:
