@@ -27,6 +27,9 @@ hystrix:
         isolation:
           thread:
             timeoutInMilliseconds: 1500
+      requestLog:
+        enabled: true
+
 management:
   endpoints:
     web:
