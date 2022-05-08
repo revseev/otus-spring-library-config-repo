@@ -1,2 +1,16 @@
 report:
   precision: 0.0001
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: always
+    metrics:
+      enabled: true
+  health:
+    defaults:
+      enabled: true
